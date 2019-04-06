@@ -1,0 +1,15 @@
+// Height and padding styles
+footer {
+    padding: 20px 0;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-para {
+    font-size: 1rem;
+    display: inline;
+}

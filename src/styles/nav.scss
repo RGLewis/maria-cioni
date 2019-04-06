@@ -1,0 +1,93 @@
+// Flex styles
+header {
+    padding: 10px 0;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+// Nav Flex
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+
+    .home-link-container {
+        width: 15%;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+    }
+}
+
+
+
+// Additional class styles
+.nav-link {
+    font-size: 1.3rem;
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid $accent-color;
+    }
+
+    &:focus, &:active {
+        color: $accent-color;
+    }
+}
+
+.home-link {
+    font-family: $accent-font;
+    color: $accent-color;
+    font-size: 2rem;
+    letter-spacing: -5px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 300ms;
+
+    &:hover {
+        font-size: 2.3rem;
+    }
+
+    &:active, &:focus {
+        border-color: $accent-color;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: transparent;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+
+    &:active, &:focus {
+        border-color: $accent-color;
+    }
+
+    .menu-bar {
+        border-radius:2px;
+        display: block;
+        margin: 3px auto;
+        width: 30px;
+        height: 5px;
+        background: $accent-color;
+        transition: all 500ms;
+    }
+}
