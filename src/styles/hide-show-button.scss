@@ -36,17 +36,16 @@
     display: block;
     width: 30px;
     height: 3px;
+    transition: all 300ms;
     
 }
 
 .vertical {
     position: absolute;
     transform: rotate(90deg) translateX(-3px);
-    transition: all 300ms;
 }
 
 // On Click button styles
 .vertical-to-horizontal {
     transform: rotate(180deg) translateY(3px);
-    // background: tomato;
 }

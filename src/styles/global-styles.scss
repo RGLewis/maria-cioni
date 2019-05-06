@@ -40,7 +40,7 @@ html {
 body {
     line-height: 1.6;
     // Background
-    background: rgb(248,248,255);
+    background: white;
     background-attachment: fixed;
     font-family: $body-font;
     color: $dark-color;
@@ -127,4 +127,10 @@ blockquote {
 
 .activeLink {
     color: green;
+}
+
+.larger-para {
+    font-weight: $bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }

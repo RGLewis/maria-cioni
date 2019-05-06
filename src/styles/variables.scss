@@ -14,3 +14,11 @@ $black: 900;
 $accent-color: #FF4500;
 $dark-color: #0e0d0d;
 $lighten-dark-color: lighten($dark-color, 20%);
+
+// Mix-ins
+@mixin photo-border {
+    margin: 20px 30px 20px 0;
+    border: 3px solid $accent-color;
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px $dark-color;
+}

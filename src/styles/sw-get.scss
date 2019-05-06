@@ -1,0 +1,15 @@
+.sw-get-link, .slash {
+    font-weight: $semi-bold;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.slash {
+    margin: 0 15px;
+}
+
+.sw-get-link {
+    &:hover, &:active, &:focus {
+        color: $accent-color;
+    }
+}

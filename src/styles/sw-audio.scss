@@ -1,1 +1,25 @@
-//Section heading styles
+.audiobook-flex-container {
+    width: 100%;
+    min-height: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .audio-cover-container {
+        width: 45%;
+        @include photo-border;
+        border-color: $dark-color;
+    }
+}
+
+.audio-sample-container {
+    width: 80%;
+    margin: 20px auto;
+    
+    .audiobook-sample {
+        width: 100%;
+        display: block;
+        @include photo-border;
+        border-color: $dark-color;
+    }
+}
