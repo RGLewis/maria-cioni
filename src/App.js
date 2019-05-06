@@ -1,25 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import "./app.scss";
 import Nav from "./components/Nav.js";
 import Home from "./components/Home.js";
 import Footer from "./components/Footer.js";
 import About from "./components/About.js";
+import SpaghettiWestern from "./components/Spaghetti-Western.js";
 
-
-
-
-class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      showHamburger: false
-      }
-  }
-  
-
-
-  render() {
+const App = () => {
     return (
       <Router>
         {/* APP STARTS */}
@@ -32,8 +20,11 @@ class App extends Component {
             {/* Home */}
             <Route path="/" exact component={Home} />
 
-            {/* Home */}
-            <Route path="/about" component={About} />
+            {/* About */}
+            <Route path="/about" exact component={About} />
+
+            {/* Spaghetti Western */}
+            <Route path="/spaghetti-western" exact component={SpaghettiWestern} />
           
             {/* Footer */}
             <Footer />
@@ -45,7 +36,6 @@ class App extends Component {
         </div>
       </Router>
     );
-  }
 }
 
 export default App;

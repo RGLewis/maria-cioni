@@ -1,0 +1,30 @@
+// Section flex and widths
+.spaghetti-western-flex-container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .spaghetti-western-aside {
+        width: 50%;
+        
+        .quotes-container {
+            width: 100%;
+            border: 4px double $accent-color;
+            padding: 20px;
+        }
+    }
+
+
+    .synopsis-container {
+        width: 50%;
+        padding-left: 5%;
+    }
+}
+
+// Additional class styles
+.quote-attribute {
+    text-align: right;
+    margin-top: 10px;
+}

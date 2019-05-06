@@ -15,19 +15,19 @@ const Home = () => {
                     <h1>Maria Cioni</h1>
 
                     {/* Typed */}
-                    <h3> <span className="tyed"> Toronto based </span>
-                        <Typed className="extra-bold"
+                    <h3> <span className="tyed"> Toronto-based </span>
+                        <Typed className="bold"
                             strings={[
                                 'Writer.',
                                 'Educator.',
                                 'Consultant.',
                                 'Researcher.',
                                 'Community Advocate.']}
-                            typeSpeed={90}
-                            backSpeed={90}
+                            typeSpeed={80}
+                            backSpeed={80}
                             // fadeOut={true}
                             // startDelay={3000}
-                            backDelay={3000}
+                            backDelay={2000}
                             showCursor={false}
                             loop >
                         </Typed>

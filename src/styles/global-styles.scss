@@ -20,7 +20,7 @@ ul {
 	padding: 0;
 }
 
-h1, h3, p {
+h1, h2, h3, h4, p, blockquote {
     margin: 0;
 }
 
@@ -28,7 +28,7 @@ h1, h3, p {
 /* Wrapper styles */
 .wrapper {
 	max-width: 1600px;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 
@@ -40,10 +40,7 @@ html {
 body {
     line-height: 1.6;
     // Background
-    background: linear-gradient(to bottom, rgba(245, 245, 245, 0.7),rgba(245, 245, 245, 0.7)), url(./assets/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(248,248,255);
     background-attachment: fixed;
     font-family: $body-font;
     color: $dark-color;
@@ -57,21 +54,61 @@ h1 {
     margin-left: 10%
 }
 
+h2 {
+    font-family: $accent-font;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    display: none;
+}
+
 h3 {
     font-size: 2.7rem;
     font-weight: $semi-bold;
     margin-left: 10%;
 }
 
+h4 {
+    font-size: 2.5rem;
+    color: $lighten-dark-color;
+    font-weight: $bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: $medium;
     letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+blockquote {
+    font-size: 1.8rem;
+    font-weight: $semi-bold;
+    letter-spacing: 2px;
+    margin-top: 40px;
 }
 
 // Additional class styles 
-.extra-bold {
+.bold {
     font-weight: $bold;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: $semi-bold;
+}
+
+.underline {
+    border-bottom: 2px solid $accent-color;
+    padding: 0 20px;
+}
+
+.page-heading {
+    padding: 0 20px;
+    border-bottom: 2px solid $accent-color;
 }
 
 .link {
@@ -86,4 +123,8 @@ p {
     &:focus, &:active {
         color: $accent-color;
     }
+}
+
+.activeLink {
+    color: green;
 }

@@ -32,11 +32,11 @@ nav {
 
 // Additional class styles
 .nav-link {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: $bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     margin: 0 10px;
     border-bottom: 2px solid transparent;
 
@@ -51,7 +51,7 @@ nav {
 
 .home-link {
     font-family: $accent-font;
-    color: $accent-color;
+    color: $dark-color;
     font-size: 2rem;
     letter-spacing: -5px;
     padding: 10px 15px;
@@ -64,7 +64,8 @@ nav {
     }
 
     &:active, &:focus {
-        border-color: $accent-color;
+        color: $accent-color;
+        font-size: 2.3rem;
     }
 }
 
@@ -90,4 +91,8 @@ nav {
         background: $accent-color;
         transition: all 500ms;
     }
+}
+
+.active-link {
+    color: $accent-color;
 }
