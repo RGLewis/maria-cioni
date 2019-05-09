@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Nav from "./Nav";
 import Typed from 'react-typed';
 
 
@@ -9,20 +10,23 @@ const Home = () => {
             {/* HOME SECTION STARTS*/}
             <section className="home">
                 
+                {/* H1 Logo */}
+                <h1>Maria Cioni</h1>
+
+                {/* Nav */}
+                <Nav />
+
                 {/* Home Flex Container starts */}
                 <div className="home-flex-container">
-                    {/* H1 Logo */}
-                    <h1>Maria Cioni</h1>
-
                     {/* Typed */}
-                    <h3> <span className="tyed"> Toronto-based </span>
+                    <h2>
                         <Typed className="bold"
                             strings={[
-                                'Writer.',
-                                'Educator.',
-                                'Consultant.',
-                                'Researcher.',
-                                'Community Advocate.']}
+                                'Writer',
+                                'Educator',
+                                'Consultant',
+                                'Researcher',
+                                'Community Advocate']}
                             typeSpeed={80}
                             backSpeed={80}
                             // fadeOut={true}
@@ -31,7 +35,7 @@ const Home = () => {
                             showCursor={false}
                             loop >
                         </Typed>
-                    </h3>
+                    </h2>
                 {/* Home Flex Container ends */}
                 </div>
             

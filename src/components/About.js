@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import Nav from "./Nav";
 import MariaHeadshot from '../assets/maria-headshot.jpg';
 
 const About = () => {
@@ -9,7 +11,10 @@ const About = () => {
             <section className="about">
                 
                 {/* Section heading */}
-                <h2><span className="underline">About Maria</span></h2>
+                <h1>Maria Cioni</h1>
+
+                {/* Nav */}
+                <Nav />
                 
                 {/* About Flex Container starts */}
                 <div className="about-container">
@@ -17,11 +22,12 @@ const About = () => {
                     <img src={MariaHeadshot} alt="A headshot of Maria, wearing a leather jacket, smiling" align="left" className="maria-headshot"/>
 
                     {/* About Written Content */}
-                    <p>Maria Cioni was born in Calgary, Alberta, the answer to her parents' prayers and a distraction for her older brother, Gary, who wanted a playmate. From ages three to ten, Maria lived above the business, Gene’s LaVilla Super Club, with cats and customers as her friends, the Wurlitzer jukebox as her orchestra, and the dance floor as her stage.</p>
+                    <p>I was born in Calgary, Alberta and from ages three to ten, we lived above the family business, Gene’s LaVilla Super Club. I treated my cats and the customers as friends, the Wurlitzer jukebox as my orchestra, and the dance floor as my stage. Indeed, I tried selling my finger paintings, advised patrons on how to eat spaghetti properly, and performed dances and skits until my mother quickly put a stop to it all. Little did I appreciate that these antics were the wellspring of my curiosity and interests in writing, teaching and international education.</p>
 
-                    <p>Maria obtained a PhD at Cambridge University.  With the guidance of Professor Geoffrey R. Elton, her supervisor, her doctoral thesis broke new ground by using court records as the principle research source for an historical, socio-legal examination of landed and upper class Elizabethan women using the equity court of Chancery to seek redress. Her thesis was published in an Oxford social history series and her thesis-summary chapter is in Tudor Rule and Revolution. Essays for G. R. Elton from his American Friends (Cambridge University Press, 2008).</p>
+                    <p>I am honoured that Professor Geoffrey R. Elton supervised my doctoral thesis at Cambridge University and was humbled by his patience when I zeroed in on court records as the principle research source for my historical, socio-legal examination of landed and upper class Elizabethan women using the equity court of Chancery to seek redress. My thesis was published in an Oxford social history series and is the basis for a chapter in <span className="italic">Tudor Rule and Revolution. Essays for G. R. Elton from his American Friends</span> (Cambridge University Press, 2008).</p>
 
-                    <p>Returning to Canada to find no academic jobs, Maria’s career evolved in government and universities, with ventures into high tech and consulting in international higher education. In 2001, Maria took time off to write. Her stories are published in Mama Mia, Good Italian Girls Talk Back (ECW Press, 2004) and in 2006,, Fifth House published her story of her father in the memoir, Spaghetti Western How My Father Brought Italian Food to the West.</p>
+                    <p> When I returned home to Canada, there were no academic jobs available in my field, and so my career evolved in government and university innovations, with ventures into high tech and consulting in international higher education. In 2001, I took time off to write. My stories are published in <span className="italic">Mama Mia, Good Italian Girls Talk Back</span> (ECW Press, 2004) and in 2006, Fifth House published my story of my father and our family in the memoir,
+                    <Link to="/spaghetti-western" className="link"> Spaghetti Western How My Father Brought Italian Food to the West</Link>.</p>
 
                 {/* About Flex Container ends */}
                 </div>

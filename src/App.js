@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./app.scss";
-import Nav from "./components/Nav.js";
 import Home from "./components/Home.js";
 import Footer from "./components/Footer.js";
 import About from "./components/About.js";
-import SpaghettiWestern from "./components/Spaghetti-Western.js";
+import SpaghettiWestern from "./components/SpaghettiWestern.js";
+import Experience from "./components/Experience.js";
 
 const App = () => {
     return (
@@ -14,17 +14,19 @@ const App = () => {
         <div className="App">
           {/* Wrapper starts */}
           <div className="wrapper">
-            {/* Nav */}
-            <Nav />
+          <Switch>
+
+              {/* About */}
+              <Route path="/" exact component={About} />
+
+              {/* Spaghetti Western */}
+              <Route path="/spaghetti-western" component={SpaghettiWestern} />
+
+              {/* Experience */}
+              <Route path="/experience" component={Experience} />
+          </Switch>
             
-            {/* Home */}
-            <Route path="/" exact component={Home} />
-
-            {/* About */}
-            <Route path="/about" exact component={About} />
-
-            {/* Spaghetti Western */}
-            <Route path="/spaghetti-western" exact component={SpaghettiWestern} />
+            
           
             {/* Footer */}
             <Footer />

@@ -1,23 +1,20 @@
-.audiobook-flex-container {
-    width: 100%;
-    min-height: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    .audio-cover-container {
-        width: 45%;
+.audio-cover-container {
+    width: 50%;
+    margin: 0 auto 40px auto;
+    
+    .audiobook-cover {
+        width: 100%;
         @include photo-border;
         border-color: $dark-color;
     }
 }
 
 .audio-sample-container {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 20px 0 50px 0;
     
     .audiobook-sample {
-        width: 100%;
+        width: 50%;
         display: block;
         @include photo-border;
         border-color: $dark-color;

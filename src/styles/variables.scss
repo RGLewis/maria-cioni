@@ -1,5 +1,5 @@
 // Fonts
-$accent-font: 'Vast Shadow', cursive;
+$accent-font: 'Chonburi', cursive;
 $body-font: 'Poppins', sans-serif;
 
 // Font Weights
@@ -13,7 +13,7 @@ $black: 900;
 // Colors
 $accent-color: #FF4500;
 $dark-color: #0e0d0d;
-$lighten-dark-color: lighten($dark-color, 20%);
+$lighten-dark-color: lighten($dark-color, 10%);
 
 // Mix-ins
 @mixin photo-border {

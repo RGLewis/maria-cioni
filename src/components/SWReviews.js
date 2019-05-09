@@ -1,30 +1,50 @@
 import React from "react";
 
-const SWReviews = () => (
-    // Quotes container starts
-    <div className="quotes-container">
-        
-        {/* Heading */}
-        <h4><span className="underline">Reviews & Praise</span></h4>
-        
-        <ul className="quotes-list">
-            <li className="quotes-list-item">
-                <blockquote className="quote">"There is a powerful sense of the sweep of time and an anchoring in the spirit of place. A revelation."</blockquote>
-                <p className="quote-attribute">— Margaret Visser, author of <span className="bold">The Rituals of Dinner</span></p>
-            </li>
+const SWReviews = (props) => {
+    const reviewsToggleBar = props.reviewsIsShown ? "hide-show-bar vertical vertical-to-horizontal" : "hide-show-bar vertical";
 
-            <li className="quotes-list-item">
-                <blockquote className="quote">“(Cioni) brings to life an era when diners had to hide their booze whenever the police came in to eat.”</blockquote>
-                <p className="quote-attribute">— Alberta Venture</p>
-            </li>
+    return (
+        // Reviews Section starts
+        <section className="reviews-container">
+
+            {/* Reviews Heading container starts */}
+            <div className="heading-container sw-heading-container">
+                <h3>Reviews & Praise</h3>
+
+                {/* Hide/Show button */}
+                <button
+                    type="button"
+                    className="hide-show-button"
+                    onClick={props.handleReviewsToggled}
+                >
+                    <span className="hide-show-bar horizontal "></span>
+                    <span className={reviewsToggleBar}></span>
+                </button>
+                {/* Reviews heading container ends */}
+            </div>
+
+            {props.reviewsIsShown &&
+                <ul className="quotes-list">
+                    <li className="quotes-list-item">
+                        <blockquote className="quote">"There is a powerful sense of the sweep of time and an anchoring in the spirit of place. A revelation."</blockquote>
+                        <p className="quote-attribute">— Margaret Visser, author of <span className="bold">The Rituals of Dinner</span></p>
+                    </li>
+
+                    <li className="quotes-list-item">
+                        <blockquote className="quote">“(Cioni) brings to life an era when diners had to hide their booze whenever the police came in to eat.”</blockquote>
+                        <p className="quote-attribute">— Alberta Venture</p>
+                    </li>
+
+                    <li className="quotes-list-item">
+                        <blockquote className="quote">  “A mighty fine read.”</blockquote>
+                        <p className="quote-attribute">— The Calgary Herald, Nov. 5 2006</p>
+                    </li>
+                </ul> 
+            }
             
-            <li className="quotes-list-item">
-                <blockquote className="quote">  “A mighty fine read.”</blockquote>
-                <p className="quote-attribute">— The Calgary Herald, Nov. 5 2006</p>
-            </li>
-        </ul>
-    {/* Quotes Container ends */}
-    </div>
-)
+        {/* Reviews section ends */}
+        </section>
+    )
+}
 
 export default SWReviews;

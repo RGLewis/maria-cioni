@@ -15,14 +15,6 @@ class Nav extends Component {
             <header>
                 {/* NAV STARTS */}
                 <nav>
-                    {/* Home nav link */}
-                    <div className="home-link-container">
-                        <NavLink
-                            to='/'
-                            className="home-link"
-                            activeClassName="active-link">MC</NavLink>
-                    </div>
-    
                     {/* Hamburger menu */}
                     <button type="button" className="hamburger-menu menu-button">
                         <span className="bar1 menu-bar"></span>
@@ -34,19 +26,22 @@ class Nav extends Component {
                     <ul className="nav-list">
                         <li className="nav-list-item">
                             <NavLink
-                                to="/about"
-                                className="nav-link" activeClassName="active-link"> About
+                                to="/"
+                                className="nav-link" activeClassName="active-link"
+                                exact> Home
                             </NavLink>
                         </li>
+
                         <li className="nav-list-item">
                             <NavLink
                                 to="/spaghetti-western"
                                 className="nav-link" activeClassName="active-link"> Spaghetti Western
                             </NavLink>
                         </li>
+
                         <li className="nav-list-item">
                             <NavLink
-                                to="/professional-highlights"
+                                to="/experience"
                                 className="nav-link" activeClassName="active-link"> Experience
                             </NavLink>
                         </li>
