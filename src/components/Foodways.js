@@ -8,18 +8,21 @@ const Foodways = (props) => {
 
             {/* Heading container starts */}
             <div className="heading-container">
-                <h3>Foodways Research</h3>
+                <h3 className="hide-show-heading">Foodways Research</h3>
 
                 {/* Hide/Show button */}
-                <button
-                    type="button"
-                    className="hide-show-button"
-                    onClick={props.handleFoodwaysToggled}
-                >
-                    <span className="hide-show-bar horizontal "></span>
-                    <span className={foodwaysToggleBar}></span>
-                </button>
-                {/* Heading container ends */}
+                <div className="hide-show-button-container">
+                    <button
+                        type="button"
+                        className="hide-show-button"
+                        onClick={props.handleFoodwaysToggled}
+                    >
+                        <span className="hide-show-bar horizontal "></span>
+                        <span className={foodwaysToggleBar}></span>
+                    </button>
+                </div>
+
+            {/* Heading container ends */}
             </div>
 
             {props.foodwaysIsShown &&

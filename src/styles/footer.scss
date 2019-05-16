@@ -1,14 +1,47 @@
 // Height and padding styles
 footer {
-    padding: 20px 0;
-    min-height: 10vh;
+    margin-top: 40px;
+    border-top: 1px solid $accent-color;
+    padding-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+
+    .footer-credits {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-contact {
+        margin: 60px 0;
+        text-align: center;
+    }
 }
 
+//Footer Connect Button styles
+.connect-with-maria {
+    padding: 15px;
+    border: 5px double $accent-color;
+    border-radius: 5px;
+    font-weight: $semi-bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    position: relative;
+    transition: color 500ms, border-radius 300ms;
+
+    &:hover {
+        //  border-color: $dark-color;
+        color: $accent-color;
+    }
+
+    &:active, &:focus {
+        border-radius: 40px;
+    }
+}
+
+//Additional Class Styles
 .footer-para {
     font-size: 1rem;
     display: inline;

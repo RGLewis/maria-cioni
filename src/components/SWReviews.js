@@ -9,18 +9,21 @@ const SWReviews = (props) => {
 
             {/* Reviews Heading container starts */}
             <div className="heading-container sw-heading-container">
-                <h3>Reviews & Praise</h3>
+                <h3 className="hide-show-heading">Reviews</h3>
 
                 {/* Hide/Show button */}
-                <button
-                    type="button"
-                    className="hide-show-button"
-                    onClick={props.handleReviewsToggled}
-                >
-                    <span className="hide-show-bar horizontal "></span>
-                    <span className={reviewsToggleBar}></span>
-                </button>
-                {/* Reviews heading container ends */}
+                <div className="hide-show-button-container">
+                    <button
+                        type="button"
+                        className="hide-show-button"
+                        onClick={props.handleReviewsToggled}
+                    >
+                        <span className="hide-show-bar horizontal "></span>
+                        <span className={reviewsToggleBar}></span>
+                    </button>
+                </div>
+            
+            {/* Reviews heading container ends */}
             </div>
 
             {props.reviewsIsShown &&

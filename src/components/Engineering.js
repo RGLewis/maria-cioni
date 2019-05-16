@@ -8,18 +8,21 @@ const Engineering = (props) => {
 
             {/* Heading container starts */}
             <div className="heading-container">
-                <h3>Engineering Communications Program, UofT</h3>
+                <h3 className="hide-show-heading long-heading">Engineering Communications Program, UofT</h3>
 
                 {/* Hide/Show button */}
-                <button
-                    type="button"
-                    className="hide-show-button"
-                    onClick={props.handleEngineeringToggled}
-                >
-                    <span className="hide-show-bar horizontal "></span>
-                    <span className={engineeringToggleBar}></span>
-                </button>
-                {/* Heading container ends */}
+                <div className="hide-show-button-container">
+                    <button
+                        type="button"
+                        className="hide-show-button"
+                        onClick={props.handleEngineeringToggled}
+                    >
+                        <span className="hide-show-bar horizontal "></span>
+                        <span className={engineeringToggleBar}></span>
+                    </button>
+                </div>
+
+            {/* Heading container ends */}
             </div>
 
             {props.engineeringIsShown &&

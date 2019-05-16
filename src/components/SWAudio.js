@@ -10,17 +10,19 @@ const SWAudio = (props) => {
 
             {/* Heading Container starts */}
             <div className="heading-container">
-                <h3>Audiobook</h3>
+                <h3 className="hide-show-heading">Audiobook</h3>
     
                 {/* Hide/Show button */}
-                <button
-                    type="button"
-                    className="hide-show-button"
-                    onClick={props.handleAudioToggled}
-                >
-                    <span className="hide-show-bar horizontal "></span>
-                    <span className={audioToggleBar}></span>
-                </button>
+                <div className="hide-show-button-container">
+                    <button
+                        type="button"
+                        className="hide-show-button"
+                        onClick={props.handleAudioToggled}
+                    >
+                        <span className="hide-show-bar horizontal "></span>
+                        <span className={audioToggleBar}></span>
+                    </button>
+                </div>
             {/* Heading container ends */}
             </div>
 

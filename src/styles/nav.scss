@@ -32,7 +32,7 @@ nav {
     }
 
     &:focus, &:active {
-        color: $accent-color;
+        border-color: $accent-color;
     }
 }
 
