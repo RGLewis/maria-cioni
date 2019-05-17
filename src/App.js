@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./app.scss";
 // eslint-disable-next-line
 import Home from "./components/Home.js";
-import Footer from "./components/Footer.js";
-import About from "./components/About.js";
-import SpaghettiWestern from "./components/SpaghettiWestern.js";
-import Experience from "./components/Experience.js";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import SpaghettiWestern from "./components/Spaghetti-Western/SpaghettiWestern";
+import Experience from "./components/Experience/Experience";
 
 const App = () => {
     return (
