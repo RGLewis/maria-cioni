@@ -5,25 +5,53 @@ class Nav extends Component {
     constructor() {
         super()
         this.state = {
-            showHamburger: false
+            menuIsClosed: true
         }
     }
 
+    //Toggling function
+    handleMenuToggled = () => {
+        this.setState(() => ({
+            menuIsClosed: !this.state.menuIsClosed
+        }))
+    };
+
     render() {
+        // Toggle for Bar 1
+        const barToggled1 = this.state.menuIsClosed ? "menu-bar" : "menu-bar transform-bar1";
+
+        // Toggle for Bar 2
+        const barToggled2 = this.state.menuIsClosed ? "menu-bar" : "menu-bar transform-bar2";
+
+        // Toggle for Bar 3
+        const barToggled3 = this.state.menuIsClosed ? "menu-bar" : "menu-bar transform-bar3";
+
+        // Toggle for Nav
+        const navToggled = this.state.menuIsClosed ? "nav-list" : "nav-list show-nav-list";
+
         return (
             // HEADER SECTION STARTS
             <header>
                 {/* NAV STARTS */}
                 <nav>
                     {/* Hamburger menu */}
-                    <button type="button" className="hamburger-menu menu-button">
-                        <span className="bar1 menu-bar"></span>
-                        <span className="bar2 menu-bar"></span>
-                        <span className="bar3 menu-bar"></span>
+                    <button 
+                        type="button" 
+                        className="hamburger-menu menu-button"
+                        onClick={this.handleMenuToggled}
+                    >
+                        
+                        <span className={barToggled1}></span>
+
+
+                        <span className={barToggled2}></span>
+
+                        <span className={barToggled3}></span>
+
                     </button>
     
                     {/* Nav List */}
-                    <ul className="nav-list">
+                    <ul className={navToggled}>
                         <li className="nav-list-item">
                             <NavLink
                                 to="/"

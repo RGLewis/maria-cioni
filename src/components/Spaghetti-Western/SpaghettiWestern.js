@@ -34,7 +34,7 @@ const SpaghettiWestern = () => {
                     <SWReviews />
                 </div>
 
-            {/* SW Main Section Container ends */}    
+            {/* SW Main Section Container ends */}
             </div>   
 
         {/* SPAGHETTI WESTERN MAIN ENDS */}

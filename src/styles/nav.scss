@@ -7,17 +7,38 @@ nav {
     min-height: 10vh;
     align-items: center;
 
+    @include tablet {
+        min-height: auto;
+    }
+
     .nav-list {
         display: flex;
-        width: 105%;
+        width: 100%;
         flex-direction: row;
         justify-content: center;
+
+        @include tablet {
+            flex-direction: column;
+            z-index: 19;
+            position: fixed;
+            height: 100vh;
+            background: white;
+            right: -100%;
+            top: 0;
+            justify-content: space-around;
+            align-items: center;
+            transition: all 300ms;
+        }
+    }
+
+    .show-nav-list {
+        @include tablet {
+            right: 0;
+        }
     }
 }
 
-
-
-// Additional class styles
+// Nav Link styles
 .nav-link {
     font-size: 1.1rem;
     font-weight: $bold;
@@ -34,28 +55,18 @@ nav {
     &:focus, &:active {
         border-color: $accent-color;
     }
-}
 
-.home-link {
-    font-family: $accent-font;
-    color: $dark-color;
-    font-size: 2rem;
-    letter-spacing: -5px;
-    padding: 10px 15px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    transition: all 300ms;
-
-    &:hover {
-        font-size: 2.3rem;
+    @include tablet {
+        font-size: 2.4rem;
+        margin: 0;
     }
 
-    &:active, &:focus {
-        color: $accent-color;
-        font-size: 2.3rem;
+    @include mobile {
+        font-size: 1.2rem;
     }
 }
 
+//Hamburger Menu styles
 .hamburger-menu {
     display: none;
     border: 2px solid transparent;
@@ -63,7 +74,8 @@ nav {
     background: transparent;
     padding: 15px;
     position: absolute;
-    right: 0;
+    right: 2%;
+    top: 2%;
 
     &:active, &:focus {
         border-color: $accent-color;
@@ -76,10 +88,33 @@ nav {
         width: 30px;
         height: 5px;
         background: $accent-color;
-        transition: all 500ms;
+        transition: transform 500ms, opacity 1ms;
+    }
+
+    @include tablet {
+        display: block;
+        z-index: 20;
     }
 }
 
+
+
+//menu button transition to close button
+.transform-bar1 {
+    transform: rotate(45deg) translate(3px, 4px);
+    border-radius: 0;
+}
+
+.transform-bar2 {
+    transform: rotate(-45deg) translate(2.5px, -2px);
+    border-radius: 0;
+}
+
+.transform-bar3 {
+    opacity: 0;
+}
+
+//Additional class styles
 .active-link {
     color: $accent-color;
 }

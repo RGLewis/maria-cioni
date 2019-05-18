@@ -4,28 +4,32 @@ const Footer = () => (
     // FOOTER STARTS
     <footer>
         <div className="footer-credits">
-            <p className="footer-para">
-            <span className="copyright">© Maria Cioni 2019</span>
-            <span className="divider">  |  </span>
-            <span className="coded-by">Designed and coded by 
-                <a 
-                    href="http://rafaelalewis.com" 
-                    className="link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                > Rafaela Lewis
-                </a>
-            </span>
-            <span className="divider">  |  </span>
-                <span className="headshot">Headshot by Rafy Winterseld</span>
+            <p className="copyright footer-para">© Maria Cioni 2019  
+                <span className="divider">|</span>
             </p>
+
+            <div className="credits-container">
+                <p className="coded-by footer-para"> Website by
+                    <a
+                        href="http://rafaelalewis.com"
+                        className="link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    > Rafaela Lewis  
+                    </a>
+                    <span className="divider">|</span>
+                </p>
+
+                <p className="headshot-credit footer-para">Headshot by Rafy Winterseld</p>
+            
+            </div>
         </div>
 
         <div className="footer-contact">
             {/* UPDATE WITH GMAIL */}
             <a 
                 className="connect-with-maria" 
-                href="www.mariacioni.ca" 
+                href="mailto:spaghettiWestern20@gmail?Subject=Inquiry%20|%20mariacioni.com" 
                 target="_blank"
                 rel="noopener noreferrer"
             >

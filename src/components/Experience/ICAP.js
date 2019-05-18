@@ -24,7 +24,7 @@ class ICAP extends Component {
 
                 {/* Heading container starts */}
                 <div className="heading-container">
-                    <h3 className="hide-show-heading long-heading">Italian-Canadian Archives Program (ICAP)</h3>
+                    <h3 className="hide-show-heading">ICAP</h3>
 
                     {/* Hide/Show button */}
                     <div className="hide-show-button-container">

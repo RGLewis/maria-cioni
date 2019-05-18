@@ -2,7 +2,23 @@
     width: 100%;
 }
 
-.maria-headshot {
+.maria-about-headshot {
     width: 35%;
-    @include photo-border;
+    float: left;
+    padding-right: 40px;
+
+    .maria-headshot {
+        width: 100%;
+        @include photo-border;
+    }
+
+    @include tablet {
+        width: 100%;
+        padding: 0 25%;
+        margin-bottom: 20px;
+    }
+
+    @include mobile {
+        padding: 0 15%;
+    }
 }
