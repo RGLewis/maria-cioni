@@ -73,15 +73,21 @@ h2 {
     color: $accent-color;
     font-weight: $bold;
     letter-spacing: 2px;
-}
 
+    @include tablet {
+        font-size: 2rem;
+    }
+}
 
 h3 {
     font-size: 1.7rem;
     color: $lighten-dark-color;
     font-weight: $bold;
     letter-spacing: 2px;
-    // text-align: center;
+
+    @include mobile {
+        font-size: 1.08rem;
+    }
 }
 
 p {
@@ -100,6 +106,14 @@ blockquote {
     font-weight: $semi-bold;
     letter-spacing: 2px;
     margin-top: 40px;
+
+    @include mobile {
+        font-size: 1.4rem;
+    }
+
+    @include final {
+        font-size: 1.1rem;
+    }
 }
 
 // Additional class styles 
@@ -115,8 +129,12 @@ blockquote {
 
 .smallest-font {
     font-size: 0.8rem;
-}
 
+    @include tablet {
+        text-align: center;
+    }
+    
+}
 
 .italic-not-bolded {
     font-style: italic;
@@ -154,14 +172,23 @@ blockquote {
     font-weight: $bold;
     font-size: 1.3rem;
     letter-spacing: 2px;
+
+    @include mobile {
+        font-size: 0.9rem;
+    }
 }
 
 .quote-attribute {
     text-align: right;
     margin-top: 10px;
+
+    @include mobile {
+        font-size: 0.9rem;
+    }
 }
 
 .list-with-bullets {
-     list-style-type: disc;
-    list-style-position: inside;
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 15px;
 }

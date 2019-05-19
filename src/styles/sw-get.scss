@@ -2,10 +2,18 @@
     font-weight: $semi-bold;
     font-size: 1.3rem;
     margin-top: 0;
+
+    @include mobile {
+        font-size: 1rem;
+    }
 }
 
 .slash {
     margin: 0 15px;
+
+    @include mobile {
+        margin: 0 5px;
+    }
 }
 
 .sw-get-link {

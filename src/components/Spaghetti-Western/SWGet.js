@@ -6,7 +6,8 @@ const SWGet = () => (
         
         <a 
             href="https://www.amazon.ca/Spaghetti-Western-Father-Brought-Italian/dp/B07D9T3D9Z/ref=sr_1_1?keywords=spaghetti+western+maria+cioni&qid=1556996196&s=gateway&sr=8-1-spell" 
-            className="sw-get-link" target="_blank"
+            className="sw-get-link" 
+            target="_blank"
             rel="noopener noreferrer"
         >
             Amazon

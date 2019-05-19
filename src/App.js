@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./app.scss";
-// eslint-disable-next-line
-import Home from "./components/Home.js";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import SpaghettiWestern from "./components/Spaghetti-Western/SpaghettiWestern";

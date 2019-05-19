@@ -26,7 +26,6 @@ const Footer = () => (
         </div>
 
         <div className="footer-contact">
-            {/* UPDATE WITH GMAIL */}
             <a 
                 className="connect-with-maria" 
                 href="mailto:spaghettiWestern20@gmail?Subject=Inquiry%20|%20mariacioni.com" 

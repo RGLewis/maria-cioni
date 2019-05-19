@@ -39,9 +39,10 @@ class SWReviews extends Component {
                         </button>
                     </div>
 
-                    {/* Reviews heading container ends */}
+                {/* Reviews heading container ends */}
                 </div>
 
+                {/* Conditionally render section content */}
                 {this.state.reviewsIsShown &&
                     <ul className="quotes-list">
                         <li className="quotes-list-item">

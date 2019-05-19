@@ -1,26 +1,46 @@
 //Overview Flex styles
 .experience-main-section-container {
     width: 100%;
-    // min-height: 5vh;
     display: flex;
     flex-direction: row;
-    // align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
 
     .experience-image-container {
         width: 30%;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
     .maria-toronto-star {
         @include photo-border;
+
+        @include tablet {
+            width: 40%;
+            margin: 20px 30%;
+        }
+
+        @include mobile {
+            width: 60%;
+            margin: 20px 20%;
+        }
     }
 
     .experience-written-content-container {
         width: 65%;
         margin-left: 5%;
+
+        @include tablet {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 }
 
 .current-work-container {
     margin-top: 20px;
 }
-

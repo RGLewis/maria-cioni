@@ -51,8 +51,6 @@ class Foodways extends Component {
             </section>
         )
     }
-
-    
 }
 
 export default Foodways;

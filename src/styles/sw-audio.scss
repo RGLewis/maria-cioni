@@ -7,6 +7,14 @@
         @include photo-border;
         border-color: $dark-color;
     }
+
+    @include mobile {
+        width: 70%;
+    }
+
+    @include final {
+        width: 90%;
+    }
 }
 
 .audio-sample-container {
@@ -18,5 +26,13 @@
         display: block;
         @include photo-border;
         border-color: $dark-color;
+
+        @include tablet {
+            width: 70%;
+        }
+
+        @include mobile {
+            width: 90%;
+        }
     }
 }

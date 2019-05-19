@@ -56,7 +56,7 @@ const Experience = () => {
                         {/* Section heading */}
                         <h2>What I'm Working On:</h2>
 
-                        {/* Component container Maria's work */}
+                        {/* Component for Maria's work */}
                         <PublishedWorks />
                         <ICAP />
                         <Foodways />

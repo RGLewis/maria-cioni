@@ -43,7 +43,6 @@ class Nav extends Component {
                         
                         <span className={barToggled1}></span>
 
-
                         <span className={barToggled2}></span>
 
                         <span className={barToggled3}></span>

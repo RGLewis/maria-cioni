@@ -24,7 +24,7 @@ class Engineering extends Component {
 
                 {/* Heading container starts */}
                 <div className="heading-container">
-                    <h3 className="hide-show-heading long-heading">University of Toronto, ECP</h3>
+                    <h3 className="hide-show-heading">UofT, ECP</h3>
 
                     {/* Hide/Show button */}
                     <div className="hide-show-button-container">
@@ -44,7 +44,7 @@ class Engineering extends Component {
                 {/* Conditionally render section content */}
                 {this.state.engineeringIsShown &&
                     <div className="engineering-show-container">
-                        <p>Lecturing and advising students in all levels in the Engineering Communications Program (since 2009) enables me to apply my previous experience, communication skills, and a passion for international education and working with students.</p>
+                        <p>Lecturing and advising students in all levels in the Engineering Communications Program at University of Toronto (since 2009) enables me to apply my previous experience, communication skills, and a passion for international education and working with students.</p>
                     </div>
                 }
 
