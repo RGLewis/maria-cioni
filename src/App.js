@@ -13,17 +13,17 @@ const App = () => {
         <div className="App">
           {/* Wrapper starts */}
           <div className="wrapper">
-          <Switch>
+            <Switch>
 
-              {/* About */}
-              <Route path="/" exact component={About} />
+                {/* About */}
+                <Route path="/" exact component={About} />
 
-              {/* Spaghetti Western */}
-              <Route path="/spaghetti-western" component={SpaghettiWestern} />
+                {/* Spaghetti Western */}
+                <Route path="/spaghetti-western" component={SpaghettiWestern} />
 
-              {/* Experience */}
-              <Route path="/experience" component={Experience} />
-          </Switch>
+                {/* Experience */}
+                <Route path="/experience" component={Experience} />
+            </Switch>
             
             
           

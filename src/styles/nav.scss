@@ -25,10 +25,13 @@ nav {
             background: white;
             right: -100%;
             top: 0;
-            justify-content: space-around;
             align-items: center;
             transition: all 300ms;
         }
+    }
+
+    .nav-list-item {
+        padding: 40px 0;
     }
 
     .show-nav-list {
